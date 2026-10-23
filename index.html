@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masai Classes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=1">
+</head>
+<body>
+<main>
+  <div class="eyebrow">Future-Ready PM with Applied AI · IIT Roorkee × Masai · Jul 2026 – Jan 2027</div>
+  <h1>Course roadmap</h1>
+  <p class="lede">Every class in date order, grouped by exam module. Open a class for a short readable note with diagrams. Class numbers are the portal's Academic Session numbers.</p>
+  <div class="stats" id="stats"></div>
+  <div id="roadmap">Loading…</div>
+  <footer>Built from my class notes. Assignments are tracked here, not done here.</footer>
+</main>
+<script src="assets/app.js?v=1"></script>
+<script>
+loadData().then(({ modules, classes }) => {
+  const notes = classes.filter(c => c.notes).length;
+  const counts = { Done: 0, Partly: 0, "Not started": 0 };
+  classes.forEach(c => Object.entries(c.assignmentCounts).forEach(([k, v]) => counts[k] += v));
+  const nextExam = modules.find(m => m.exam >= new Date().toISOString().slice(0, 10));
+  document.getElementById("stats").innerHTML = [
+    [classes.length, "classes and workshops"],
+    [`${notes}/${classes.length}`, "readable notes ready"],
+    [`${counts.Done}/${counts.Done + counts.Partly + counts["Not started"]}`, "assignments done"],
+    [nextExam ? fmtDate(nextExam.exam) : "All done", nextExam ? `next exam (${nextExam.name})` : "exams"]
+  ].map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
+
+  document.getElementById("roadmap").innerHTML = modules.map(m => {
+    const items = classes.filter(c => c.module === m.id).map(c => {
+      const label = c.workshop ? "Workshop" : `Class ${String(c.num).padStart(2, "0")}`;
+      const inner = `<span class="num">${label}</span><span class="title">${esc(c.topic)}</span>
+        <span class="chips">${chips(c)}</span><span class="sub">${fmtDate(c.date)} · ${esc(c.detail)}</span>`;
+      return `<li>${c.notes ? `<a class="item" href="class.html#${encodeURIComponent(c.slug).replace(/%20/g, "_")}">${inner}</a>` : `<div class="item">${inner}</div>`}</li>`;
+    }).join("");
+    return `<section class="module"><div class="module-head"><h2>${m.name}</h2><span class="meta">${m.label} · exam ${fmtDate(m.exam)}</span></div>
+      <ol class="rail">${items}<li class="exam"><div class="item"><span class="num">Exam</span><span class="title">${m.name} evaluation</span><span class="sub">${fmtDate(m.exam)} · 90 minutes · 10% weightage</span></div></li></ol></section>`;
+  }).join("");
+}).catch(e => { document.getElementById("roadmap").textContent = "Could not load the roadmap data. " + e.message; });
+</script>
+</body>
+</html>

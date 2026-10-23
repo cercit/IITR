@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exams · Masai Classes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=1">
+</head>
+<body>
+<main>
+  <h1>Exams</h1>
+  <p class="lede">Each module ends with a 90-minute online evaluation worth 10%: objective questions (+4 correct, −1 wrong) and subjective questions marked against a rubric.</p>
+  <div class="md" id="table">Loading…</div>
+  <h2>Preparation</h2>
+  <div class="card-grid">
+    <div class="card"><span class="eyebrow">Module 4</span><h3>Must reads and 3 mock exams</h3>
+      <p>Sessions 23–28 condensed, plus three timed mocks in the real format.</p>
+      <a href="https://cercit.github.io/pm-module4-prep/">Open Module 4 prep</a></div>
+    <div class="card"><span class="eyebrow">Module 1</span><h3>Practice evaluation</h3>
+      <p>Mock questions for Sessions 1–8.</p>
+      <a href="https://github.com/cercit/masai-pm-mock-eval">github.com/cercit/masai-pm-mock-eval</a></div>
+    <div class="card"><span class="eyebrow">Lesson learned</span><h3>Subjective answers</h3>
+      <p>Copy each sub-task as a heading and answer under it. Check crore/lakh units before dividing. On multi-select, test every option.</p></div>
+  </div>
+</main>
+<script src="assets/app.js?v=1"></script>
+<script>
+loadData().then(({ modules, classes }) => {
+  const today = new Date().toISOString().slice(0, 10);
+  document.getElementById("table").innerHTML = `<table><thead><tr><th>Module</th><th>Sessions</th><th>Exam date</th><th>Status</th><th>Notes ready</th></tr></thead><tbody>` +
+    modules.map(m => {
+      const cs = classes.filter(c => c.module === m.id);
+      const st = m.exam < today ? '<span class="chip done">Taken</span>' : '<span class="chip partly">Upcoming</span>';
+      return `<tr><td>${m.name}</td><td>${m.label}</td><td>${fmtDate(m.exam)}</td><td>${st}</td><td>${cs.filter(c => c.notes).length}/${cs.length}</td></tr>`;
+    }).join("") + "</tbody></table>";
+});
+</script>
+</body>
+</html>

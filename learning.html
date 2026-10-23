@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learning Tracker · Masai Classes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=1">
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+</head>
+<body>
+<main>
+  <h1>Learning tracker</h1>
+  <p class="lede">Extra learning beyond the course, picked for an AI PM role in fintech. Each course is paired with a small project so it sticks.</p>
+
+  <h2>Do first</h2>
+  <div class="md"><table>
+    <thead><tr><th>Order</th><th>Course</th><th>Where</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><a href="https://www.deeplearning.ai/courses/evaluating-ai-agents">Evaluating AI Agents</a></td><td>DeepLearning.AI (free)</td><td>Evals come up in almost every AI PM interview</td></tr>
+      <tr><td>2</td><td>Generative AI for Everyone (#17)</td><td>Verizon Skill Forward (edX)</td><td>LLM basics in interview language</td></tr>
+      <tr><td>3</td><td>n8n tutorials</td><td>n8n's own docs</td><td>Agents; Monday classes now use n8n</td></tr>
+      <tr><td>4</td><td>Large Language Model Operations, LLMOps (#31)</td><td>Verizon Skill Forward (edX)</td><td>Testing, deploying and monitoring LLM features</td></tr>
+      <tr><td>5</td><td>Credit Risk and Credit Analysis (#59)</td><td>Verizon Skill Forward (edX)</td><td>Domain credential behind cercit</td></tr>
+      <tr><td>6</td><td>Product Management (#38)</td><td>Verizon Skill Forward (edX)</td><td>Optional second PM certificate</td></tr>
+      <tr><td>7</td><td>From Database to Dashboard using SQL and Power BI (#45)</td><td>Verizon Skill Forward (edX)</td><td>Pull my own numbers</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>AI tools track</h2>
+  <article class="md" id="track">Loading…</article>
+</main>
+<script src="assets/app.js?v=1"></script>
+<script>
+fetch("data/ai-tools-track.md").then(r => r.ok ? r.text() : Promise.reject())
+  .then(t => document.getElementById("track").innerHTML = marked.parse(t.replace(/^# .*\n/, "")))
+  .catch(() => document.getElementById("track").textContent = "Tracker file not found.");
+</script>
+</body>
+</html>

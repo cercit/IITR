@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Class Note · Masai Classes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=1">
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+</head>
+<body>
+<main>
+  <p><a href="index.html">← Roadmap</a></p>
+  <article class="md" id="note">Loading…</article>
+  <nav class="pager" id="pager"></nav>
+</main>
+<script src="assets/app.js?v=1"></script>
+<script>
+const slugFromHash = () => decodeURIComponent(location.hash.slice(1).replace(/_/g, " "));
+function show() {
+  loadData().then(async ({ classes }) => {
+    const list = classes.filter(c => c.notes);
+    const i = list.findIndex(c => c.slug === slugFromHash());
+    const c = list[i];
+    const el = document.getElementById("note");
+    if (!c) { el.innerHTML = '<p>That class note was not found. Go back to the <a href="index.html">roadmap</a>.</p>'; return; }
+    document.title = `${c.workshop ? "Workshop" : "Class " + String(c.num).padStart(2, "0")} · ${c.topic}`;
+    const base = "notes/" + c.slug.split("/").map(encodeURIComponent).join("/");
+    const r = await fetch(base + "/note.md");
+    el.innerHTML = r.ok ? renderMarkdown(await r.text(), base) : "<p>Could not load this note.</p>";
+    runMermaid();
+    const link = (x, label) => x ? `<a href="class.html#${encodeURIComponent(x.slug).replace(/%20/g, "_")}">${label}</a>` : "<span></span>";
+    document.getElementById("pager").innerHTML =
+      link(list[i - 1], "← " + (list[i - 1] ? esc(list[i - 1].topic) : "")) + link(list[i + 1], (list[i + 1] ? esc(list[i + 1].topic) : "") + " →");
+    scrollTo(0, 0);
+  });
+}
+addEventListener("hashchange", show);
+show();
+</script>
+</body>
+</html>

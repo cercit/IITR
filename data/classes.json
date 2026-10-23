@@ -1,0 +1,629 @@
+{
+ "modules": [
+  {
+   "id": 1,
+   "name": "Module 1",
+   "range": [
+    0,
+    8
+   ],
+   "exam": "2026-08-22",
+   "label": "Academic Sessions 1–8"
+  },
+  {
+   "id": 2,
+   "name": "Module 2",
+   "range": [
+    9,
+    14
+   ],
+   "exam": "2026-09-19",
+   "label": "Academic Sessions 9–14"
+  },
+  {
+   "id": 3,
+   "name": "Module 3",
+   "range": [
+    15,
+    22
+   ],
+   "exam": "2026-10-10",
+   "label": "Academic Sessions 15–22"
+  },
+  {
+   "id": 4,
+   "name": "Module 4",
+   "range": [
+    23,
+    28
+   ],
+   "exam": "2026-10-31",
+   "label": "Academic Sessions 23–28"
+  }
+ ],
+ "classes": [
+  {
+   "key": "00",
+   "num": 0,
+   "folder": "Class 00 - Inaugural Session",
+   "slug": "Class 00 - Inaugural Session",
+   "date": "2026-07-09",
+   "topic": "Inaugural Session",
+   "detail": "Programme, assessment and learner support",
+   "portal": "0",
+   "module": 1,
+   "workshop": false,
+   "notes": true,
+   "words": 2003,
+   "assignment": "done",
+   "assignmentCounts": {
+    "Done": 1
+   }
+  },
+  {
+   "key": "01",
+   "num": 1,
+   "folder": "Class 01 - Introduction to Product Management",
+   "slug": "Class 01 - Introduction to Product Management",
+   "date": "2026-07-13",
+   "topic": "Introduction to Product Management",
+   "detail": "Product management and the PM ecosystem",
+   "portal": "1",
+   "module": 1,
+   "workshop": false,
+   "notes": true,
+   "words": 2075,
+   "assignment": "partly",
+   "assignmentCounts": {
+    "Partly": 1
+   }
+  },
+  {
+   "key": "02",
+   "num": 2,
+   "folder": "Class 02 - Day in the Life of a PM",
+   "slug": "Class 02 - Day in the Life of a PM",
+   "date": "2026-07-16",
+   "topic": "Day in the Life of a PM",
+   "detail": "A PM's toolkit, lifecycle and portfolio",
+   "portal": "2",
+   "module": 1,
+   "workshop": false,
+   "notes": true,
+   "words": 2186,
+   "assignment": "done",
+   "assignmentCounts": {
+    "Done": 1
+   }
+  },
+  {
+   "key": "03",
+   "num": 3,
+   "folder": "Class 03 - Research Methods",
+   "slug": "Class 03 - Research Methods",
+   "date": "2026-07-20",
+   "topic": "Research Methods",
+   "detail": "Research methods and new product development",
+   "portal": "3",
+   "module": 1,
+   "workshop": false,
+   "notes": true,
+   "words": 2154,
+   "assignment": "partly",
+   "assignmentCounts": {
+    "Partly": 1
+   }
+  },
+  {
+   "key": "04",
+   "num": 4,
+   "folder": "Class 04 - User Interviews",
+   "slug": "Class 04 - User Interviews",
+   "date": "2026-07-23",
+   "topic": "User Interviews",
+   "detail": "The art of the user interview",
+   "portal": "4",
+   "module": 1,
+   "workshop": false,
+   "notes": true,
+   "words": 2074,
+   "assignment": "partly",
+   "assignmentCounts": {
+    "Done": 1,
+    "Not started": 1
+   }
+  },
+  {
+   "key": "05",
+   "num": 5,
+   "folder": "Class 05 - Research Synthesis and Personas",
+   "slug": "Class 05 - Research Synthesis and Personas",
+   "date": "2026-07-27",
+   "topic": "Research Synthesis and Personas",
+   "detail": "Empathy maps, affinity clustering, personas, journeys",
+   "portal": "5",
+   "module": 1,
+   "workshop": false,
+   "notes": true,
+   "words": 2069,
+   "assignment": "partly",
+   "assignmentCounts": {
+    "Done": 1,
+    "Not started": 1
+   }
+  },
+  {
+   "key": "06",
+   "num": 6,
+   "folder": "Class 06 - Competitive Teardown",
+   "slug": "Class 06 - Competitive Teardown",
+   "date": "2026-07-30",
+   "topic": "Competitive Teardown",
+   "detail": "Competitor teardown and opportunity assessment",
+   "portal": "6",
+   "module": 1,
+   "workshop": false,
+   "notes": true,
+   "words": 2169,
+   "assignment": "done",
+   "assignmentCounts": {
+    "Done": 1
+   }
+  },
+  {
+   "key": "07",
+   "num": 7,
+   "folder": "Class 07 - MVP",
+   "slug": "Class 07 - MVP",
+   "date": "2026-08-03",
+   "topic": "MVP",
+   "detail": "MVP case study",
+   "portal": "7",
+   "module": 1,
+   "workshop": false,
+   "notes": true,
+   "words": 2064,
+   "assignment": "open",
+   "assignmentCounts": {
+    "Not started": 1
+   }
+  },
+  {
+   "key": "08",
+   "num": 8,
+   "folder": "Class 08 - Design Thinking",
+   "slug": "Class 08 - Design Thinking",
+   "date": "2026-08-06",
+   "topic": "Design Thinking",
+   "detail": "Design thinking for PMs",
+   "portal": "8",
+   "module": 1,
+   "workshop": false,
+   "notes": true,
+   "words": 2031,
+   "assignment": "open",
+   "assignmentCounts": {
+    "Not started": 1
+   }
+  },
+  {
+   "key": "09",
+   "num": 9,
+   "folder": "Class 09 - Figma and Prototyping",
+   "slug": "Class 09 - Figma and Prototyping",
+   "date": "2026-08-10",
+   "topic": "Figma and Prototyping",
+   "detail": "Figma: wireframing to prototyping",
+   "portal": "9",
+   "module": 2,
+   "workshop": false,
+   "notes": true,
+   "words": 2000,
+   "assignment": "partly",
+   "assignmentCounts": {
+    "Partly": 1
+   }
+  },
+  {
+   "key": "10",
+   "num": 10,
+   "folder": "Class 10 - Usability Testing",
+   "slug": "Class 10 - Usability Testing",
+   "date": "2026-08-14",
+   "topic": "Usability Testing",
+   "detail": "Usability testing and concept validation",
+   "portal": "10",
+   "module": 2,
+   "workshop": false,
+   "notes": true,
+   "words": 2177,
+   "assignment": "open",
+   "assignmentCounts": {
+    "Not started": 1
+   }
+  },
+  {
+   "key": "11",
+   "num": 11,
+   "folder": "Class 11 - PRD and User Stories",
+   "slug": "Class 11 - PRD and User Stories",
+   "date": "2026-08-17",
+   "topic": "PRD and User Stories",
+   "detail": "From research to requirements: PRD and user stories",
+   "portal": "11",
+   "module": 2,
+   "workshop": false,
+   "notes": true,
+   "words": 2175,
+   "assignment": "done",
+   "assignmentCounts": {
+    "Done": 1
+   }
+  },
+  {
+   "key": "12",
+   "num": 12,
+   "folder": "Class 12 - Stakeholder Management",
+   "slug": "Class 12 - Stakeholder Management",
+   "date": "2026-08-21",
+   "topic": "Stakeholder Management",
+   "detail": "Stakeholder communication and alignment",
+   "portal": "12",
+   "module": 2,
+   "workshop": false,
+   "notes": true,
+   "words": 2059,
+   "assignment": "partly",
+   "assignmentCounts": {
+    "Done": 1,
+    "Not started": 1
+   }
+  },
+  {
+   "key": "13",
+   "num": 13,
+   "folder": "Class 13 - Design Sprint",
+   "slug": "Class 13 - Design Sprint",
+   "date": "2026-08-24",
+   "topic": "Design Sprint",
+   "detail": "End-to-end design sprint and roadmaps",
+   "portal": "13",
+   "module": 2,
+   "workshop": false,
+   "notes": true,
+   "words": 2171,
+   "assignment": "partly",
+   "assignmentCounts": {
+    "Partly": 1
+   }
+  },
+  {
+   "key": "14",
+   "num": 14,
+   "folder": "Class 14 - Agile and Jira",
+   "slug": "Class 14 - Agile and Jira",
+   "date": "2026-08-27",
+   "topic": "Agile and Jira",
+   "detail": "Agile in practice: Jira ceremonies and execution",
+   "portal": "14",
+   "module": 2,
+   "workshop": false,
+   "notes": true,
+   "words": 2172,
+   "assignment": "partly",
+   "assignmentCounts": {
+    "Partly": 1
+   }
+  },
+  {
+   "key": "15",
+   "num": 15,
+   "folder": "Class 15 - Market Analysis and Positioning",
+   "slug": "Class 15 - Market Analysis and Positioning",
+   "date": "2026-08-31",
+   "topic": "Market Analysis and Positioning",
+   "detail": "Vision, market analysis and positioning",
+   "portal": "15",
+   "module": 3,
+   "workshop": false,
+   "notes": true,
+   "words": 2030,
+   "assignment": "open",
+   "assignmentCounts": {
+    "Not started": 1
+   }
+  },
+  {
+   "key": "16",
+   "num": 16,
+   "folder": "Class 16 - Mixpanel Funnels and Retention",
+   "slug": "Class 16 - Mixpanel Funnels and Retention",
+   "date": "2026-09-04",
+   "topic": "Mixpanel Funnels and Retention",
+   "detail": "Events, funnels and retention",
+   "portal": "16",
+   "module": 3,
+   "workshop": false,
+   "notes": true,
+   "words": 2005,
+   "assignment": "open",
+   "assignmentCounts": {
+    "Not started": 1
+   }
+  },
+  {
+   "key": "17",
+   "num": 17,
+   "folder": "Class 17 - Pricing and Business Models",
+   "slug": "Class 17 - Pricing and Business Models",
+   "date": "2026-09-07",
+   "topic": "Pricing and Business Models",
+   "detail": "Pricing, packaging and business models",
+   "portal": "17",
+   "module": 3,
+   "workshop": false,
+   "notes": true,
+   "words": 1975,
+   "assignment": "open",
+   "assignmentCounts": {
+    "Not started": 1
+   }
+  },
+  {
+   "key": "18",
+   "num": 18,
+   "folder": "Class 18 - GTM Strategy",
+   "slug": "Class 18 - GTM Strategy",
+   "date": "2026-09-11",
+   "topic": "GTM Strategy",
+   "detail": "Go-to-market strategy",
+   "portal": "18",
+   "module": 3,
+   "workshop": false,
+   "notes": true,
+   "words": 2067,
+   "assignment": "partly",
+   "assignmentCounts": {
+    "Partly": 1
+   }
+  },
+  {
+   "key": "19",
+   "num": 19,
+   "folder": "Class 19 - Growth Loops and Lifecycle",
+   "slug": "Class 19 - Growth Loops and Lifecycle",
+   "date": "2026-09-12",
+   "topic": "Growth Loops and Lifecycle",
+   "detail": "Growth loops, lifecycle, A/B testing",
+   "portal": "19",
+   "module": 3,
+   "workshop": false,
+   "notes": true,
+   "words": 2084,
+   "assignment": "open",
+   "assignmentCounts": {
+    "Not started": 1
+   }
+  },
+  {
+   "key": "20",
+   "num": 20,
+   "folder": "Class 20 - Capstone and LLM Fundamentals",
+   "slug": "Class 20 - Capstone and LLM Fundamentals",
+   "date": "2026-09-18",
+   "topic": "Capstone and LLM Fundamentals",
+   "detail": "Capstone briefing and LLM fundamentals",
+   "portal": "20",
+   "module": 3,
+   "workshop": false,
+   "notes": true,
+   "words": 1834,
+   "assignment": "partly",
+   "assignmentCounts": {
+    "Done": 1,
+    "Not started": 1
+   }
+  },
+  {
+   "key": "21",
+   "num": 21,
+   "folder": "Class 21 - Product Strategy and LLM Types",
+   "slug": "Class 21 - Product Strategy and LLM Types",
+   "date": "2026-09-21",
+   "topic": "Product Strategy and LLM Types",
+   "detail": "Product strategy and types of LLMs",
+   "portal": "21",
+   "module": 3,
+   "workshop": false,
+   "notes": true,
+   "words": 1973,
+   "assignment": "open",
+   "assignmentCounts": {
+    "Not started": 1
+   }
+  },
+  {
+   "key": "22",
+   "num": 22,
+   "folder": "Class 22 - Capstone Mentoring and Image Models",
+   "slug": "Class 22 - Capstone Mentoring and Image Models",
+   "date": "2026-09-25",
+   "topic": "Capstone Mentoring and Image Models",
+   "detail": "Capstone mentoring, image and video models",
+   "portal": "22",
+   "module": 3,
+   "workshop": false,
+   "notes": true,
+   "words": 1833,
+   "assignment": "partly",
+   "assignmentCounts": {
+    "Partly": 1
+   }
+  },
+  {
+   "key": "W 27 Sep",
+   "num": null,
+   "folder": "Workshop 2026-09-27 - PRD Writing",
+   "slug": "Workshop 2026-09-27 - PRD Writing",
+   "date": "2026-09-27",
+   "topic": "PRD Writing",
+   "detail": "PRD writing workshop",
+   "portal": "-",
+   "module": 3,
+   "workshop": true,
+   "notes": true,
+   "words": 1841,
+   "assignment": "done",
+   "assignmentCounts": {
+    "Done": 1
+   }
+  },
+  {
+   "key": "23",
+   "num": 23,
+   "folder": "Class 23 - AI Foundations for PMs",
+   "slug": "Class 23 - AI Foundations for PMs",
+   "date": "2026-09-28",
+   "topic": "AI Foundations for PMs",
+   "detail": "AI foundations for product managers",
+   "portal": "23",
+   "module": 4,
+   "workshop": false,
+   "notes": true,
+   "words": 2064,
+   "assignment": "partly",
+   "assignmentCounts": {
+    "Partly": 1,
+    "Not started": 1
+   }
+  },
+  {
+   "key": "24",
+   "num": 24,
+   "folder": "Class 24 - Reimagining Products with AI",
+   "slug": "Class 24 - Reimagining Products with AI",
+   "date": "2026-10-02",
+   "topic": "Reimagining Products with AI",
+   "detail": "Re-imagining products with an AI lens, prompting",
+   "portal": "24",
+   "module": 4,
+   "workshop": false,
+   "notes": true,
+   "words": 2015,
+   "assignment": "partly",
+   "assignmentCounts": {
+    "Partly": 1,
+    "Not started": 1
+   }
+  },
+  {
+   "key": "W 4 Oct",
+   "num": null,
+   "folder": "Workshop 2026-10-04 - Sprint Planning",
+   "slug": "Workshop 2026-10-04 - Sprint Planning",
+   "date": "2026-10-04",
+   "topic": "Sprint Planning",
+   "detail": "Sprint planning workshop",
+   "portal": "-",
+   "module": 3,
+   "workshop": true,
+   "notes": true,
+   "words": 1955,
+   "assignment": "done",
+   "assignmentCounts": {
+    "Done": 1
+   }
+  },
+  {
+   "key": "25",
+   "num": 25,
+   "folder": "Class 25 - AI Strategy and Responsible AI",
+   "slug": "Class 25 - AI Strategy and Responsible AI",
+   "date": "2026-10-05",
+   "topic": "AI Strategy and Responsible AI",
+   "detail": "Model selection, cost, latency, responsible AI",
+   "portal": "25",
+   "module": 4,
+   "workshop": false,
+   "notes": true,
+   "words": 2176,
+   "assignment": "partly",
+   "assignmentCounts": {
+    "Done": 1,
+    "Not started": 1
+   }
+  },
+  {
+   "key": "26",
+   "num": 26,
+   "folder": "Class 26 - Metrics and Prioritisation",
+   "slug": "Class 26 - Metrics and Prioritisation",
+   "date": "2026-10-09",
+   "topic": "Metrics and Prioritisation",
+   "detail": "Portal: AI ideation and PRD drafting. Taught: AARRR, HEART, prioritisation",
+   "portal": "26",
+   "module": 4,
+   "workshop": false,
+   "notes": true,
+   "words": 1933,
+   "assignment": "open",
+   "assignmentCounts": {
+    "Not started": 1
+   }
+  },
+  {
+   "key": "27",
+   "num": 27,
+   "folder": "Class 27 - GitHub Copilot and Slack vs Copilot",
+   "slug": "Class 27 - GitHub Copilot and Slack vs Copilot",
+   "date": "2026-10-12",
+   "topic": "GitHub Copilot and Slack vs Copilot",
+   "detail": "Portal: Slack AI vs Microsoft Copilot. Taught: VS Code and GitHub Copilot",
+   "portal": "27",
+   "module": 4,
+   "workshop": false,
+   "notes": true,
+   "words": 1914,
+   "assignment": "done",
+   "assignmentCounts": {
+    "Done": 2
+   }
+  },
+  {
+   "key": "28",
+   "num": 28,
+   "folder": "Class 28 - AI-Driven UX",
+   "slug": "Class 28 - AI-Driven UX",
+   "date": "2026-10-16",
+   "topic": "AI-Driven UX",
+   "detail": "AI-driven UX and ethical AI interfaces",
+   "portal": "28",
+   "module": 4,
+   "workshop": false,
+   "notes": true,
+   "words": 1878,
+   "assignment": "open",
+   "assignmentCounts": {
+    "Not started": 4
+   }
+  },
+  {
+   "key": "W 17 Oct",
+   "num": null,
+   "folder": "Workshop 2026-10-17 - LLM Selection",
+   "slug": "Workshop 2026-10-17 - LLM Selection",
+   "date": "2026-10-17",
+   "topic": "LLM Selection",
+   "detail": "LLM selection, evaluation and routing",
+   "portal": "-",
+   "module": 4,
+   "workshop": true,
+   "notes": true,
+   "words": 2006,
+   "assignment": "open",
+   "assignmentCounts": {
+    "Not started": 1
+   }
+  }
+ ]
+}
