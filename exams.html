@@ -3,38 +3,37 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var t=localStorage.getItem('sameer-portfolio-theme');document.documentElement.dataset.theme=(t==='light'||t==='dark')?t:(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}catch(e){document.documentElement.dataset.theme='dark'}</script>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/style.css?v=2">
 <title>Exams · Masai Classes</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=1">
+
 </head>
 <body>
 <main>
-  <h1>Exams</h1>
-  <p class="lede">Each module ends with a 90-minute online evaluation worth 10%: objective questions (+4 correct, −1 wrong) and subjective questions marked against a rubric.</p>
-  <div class="md" id="table">Loading…</div>
-  <h2>Preparation</h2>
-  <div class="card-grid">
-    <div class="card"><span class="eyebrow">Module 4</span><h3>Must reads and 3 mock exams</h3>
-      <p>Sessions 23–28 condensed, plus three timed mocks in the real format.</p>
-      <a href="https://cercit.github.io/pm-module4-prep/">Open Module 4 prep</a></div>
-    <div class="card"><span class="eyebrow">Module 1</span><h3>Practice evaluation</h3>
-      <p>Mock questions for Sessions 1–8.</p>
-      <a href="https://github.com/cercit/masai-pm-mock-eval">github.com/cercit/masai-pm-mock-eval</a></div>
-    <div class="card"><span class="eyebrow">Lesson learned</span><h3>Subjective answers</h3>
-      <p>Copy each sub-task as a heading and answer under it. Check crore/lakh units before dividing. On multi-select, test every option.</p></div>
-  </div>
+
+<section class="page-intro wrap"><span class="eyebrow">Evaluations</span><h1>Four module exams.</h1>
+  <p class="lede">Each module ends with a 90-minute online evaluation worth 10%: objective questions (+4 right, −1 wrong) and subjective questions marked against a rubric.</p></section>
+<div class="wrap">
+<div class="table-wrap"><table class="plain" id="exams"></table></div>
+<section class="section"><div class="section-heading"><div><span class="eyebrow">Preparation</span><h2>What helps</h2></div></div>
+<div class="card-grid">
+<article class="card"><div class="kicker"><span>Module 4</span><span>Live</span></div><h3>Must reads and 3 mock exams</h3><p>Sessions 23–28 condensed, plus three timed mocks in the real format.</p><a class="text-link" href="https://cercit.github.io/pm-module4-prep/">Open Module 4 prep ↗</a></article>
+<article class="card"><div class="kicker"><span>Module 1</span><span>Live</span></div><h3>Practice evaluation</h3><p>Mock questions for Sessions 1–8.</p><a class="text-link" href="https://github.com/cercit/masai-pm-mock-eval">Open on GitHub ↗</a></article>
+<article class="card"><div class="kicker"><span>Lesson learned</span><span></span></div><h3>How subjective answers score</h3><p>Copy each sub-task as a heading and answer under it. Check crore and lakh units before dividing. On multi-select, test every option.</p></article>
+</div></section></div>
+
 </main>
-<script src="assets/app.js?v=1"></script>
+<script src="assets/app.js?v=2"></script>
 <script>
+
 loadData().then(({ modules, classes }) => {
-  const today = new Date().toISOString().slice(0, 10);
-  document.getElementById("table").innerHTML = `<table><thead><tr><th>Module</th><th>Sessions</th><th>Exam date</th><th>Status</th><th>Notes ready</th></tr></thead><tbody>` +
-    modules.map(m => {
-      const cs = classes.filter(c => c.module === m.id);
-      const st = m.exam < today ? '<span class="chip done">Taken</span>' : '<span class="chip partly">Upcoming</span>';
-      return `<tr><td>${m.name}</td><td>${m.label}</td><td>${fmtDate(m.exam)}</td><td>${st}</td><td>${cs.filter(c => c.notes).length}/${cs.length}</td></tr>`;
-    }).join("") + "</tbody></table>";
+  const t = today();
+  document.getElementById('exams').innerHTML = '<thead><tr><th>Module</th><th>Sessions</th><th>Exam date</th><th>Status</th><th>Notes ready</th></tr></thead><tbody>' +
+    modules.map(m => { const cs = classes.filter(c => c.module === m.id); return `<tr><td><b>${m.name}</b></td><td>${m.label}</td><td>${fmtDate(m.exam)}</td><td><span class="chip ${m.exam < t ? 'good' : 'part'}">${m.exam < t ? 'Taken' : 'Upcoming'}</span></td><td>${cs.filter(c => c.notes).length}/${cs.length}</td></tr>`; }).join('') + '</tbody>';
 });
+
 </script>
 </body>
 </html>

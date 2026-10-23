@@ -1,0 +1,335 @@
+[
+ {
+  "title": "Now: before the exam on 31 Oct",
+  "items": [
+   {
+    "group": "Class 28 · AI-Driven UX"
+   },
+   {
+    "done": false,
+    "id": "28.1",
+    "text": "NotebookLM audio + video resume from your resume and site text, plus a 3-line note on the mind map",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "28.2",
+    "text": "Napkin AI career-journey image, exported as PNG",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "28.3",
+    "text": "Gamma deck \"AI PM in 2027\" for interviews, ≤10 slides, every number sourced",
+    "effort": "M"
+   },
+   {
+    "done": false,
+    "id": "28.4",
+    "text": "8-principle UX review of Gamma, ChatGPT or NotebookLM (problem, fix, metric), then a LinkedIn post",
+    "effort": "M"
+   },
+   {
+    "group": "Class 26 · Metrics and Prioritisation"
+   },
+   {
+    "done": false,
+    "id": "26.1",
+    "text": "North star + 3 drivers + 2 counter metrics for your product",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "26.2",
+    "text": "AARRR table + HEART table for your product",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "26.3",
+    "text": "Prioritise 6 features: MoSCoW, then RICE",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "26.4",
+    "text": "Tinder download-drop root-cause analysis",
+    "effort": "S"
+   },
+   {
+    "group": "Class 25 · AI Strategy and Responsible AI"
+   },
+   {
+    "done": false,
+    "id": "25.1",
+    "text": "Compare 3 models (quality, TTFT, TTLT, cost) on Artificial Analysis for one AI feature",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "25.2",
+    "text": "Daily cost calculation at your volume, with the token sums shown",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "25.3",
+    "text": "5-test red-team list: jailbreak, injection, false premise, role-play, leakage",
+    "effort": "S"
+   },
+   {
+    "group": "Class 24 · Reimagining Products with AI"
+   },
+   {
+    "done": false,
+    "id": "24.1",
+    "text": "Prompt library: 3 recurring work tasks in Role–Context–Format, each tested once",
+    "effort": "M"
+   },
+   {
+    "done": false,
+    "id": "24.2",
+    "text": "LinkedIn post: \"my top 5 prompting lessons\"",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "24.3",
+    "text": "(optional) 8–10 page AI-tools experience document",
+    "effort": "L"
+   },
+   {
+    "done": false,
+    "id": "24.4",
+    "text": "(optional) ElevenLabs voiceover",
+    "effort": "S"
+   },
+   {
+    "group": "Class 23 · AI Foundations for PMs"
+   },
+   {
+    "done": false,
+    "id": "23.1",
+    "text": "Collect 8–10 AI PM job descriptions (fintech first), list the skills and mark each have / learning / gap",
+    "effort": "M"
+   },
+   {
+    "done": false,
+    "id": "23.2",
+    "text": "Turn the gaps into a crawl / walk / run plan",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "23.3",
+    "text": "AI-industry table + mind map: rule-based, ML, deep learning, generative AI with examples",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "23.4",
+    "text": "ARC puzzle screenshot",
+    "effort": "S"
+   }
+  ]
+ },
+ {
+  "title": "After the exam: Module 3 topics",
+  "items": [
+   {
+    "done": false,
+    "id": "22.1",
+    "text": "20 image prompts for one product visual, varying one setting each time, saved with outputs",
+    "effort": "M"
+   },
+   {
+    "done": false,
+    "id": "21.1",
+    "text": "Strategy critique of Spotify, PhonePe or Razorpay, in your own words first",
+    "effort": "M"
+   },
+   {
+    "done": false,
+    "id": "21.2",
+    "text": "Strategy canvas (8 fields) for your product",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "20.1",
+    "text": "Finalise HireMate: remove \"DRAFT\" and check the 6–8 metrics",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "20.2",
+    "text": "Explain a transformer to 4–5 people and note their questions",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "19.1",
+    "text": "Spotify or Netflix funnel in Excel: CAC, LTV, LTV:CAC, with 10% what-ifs",
+    "effort": "M"
+   },
+   {
+    "done": false,
+    "id": "19.2",
+    "text": "PhonePe A/B test design: hypothesis, metric, sample, guardrail",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "18.1",
+    "text": "30-day GTM plan (QuickFix or your product): segment, value, 3 channels, activation, metrics",
+    "effort": "M"
+   },
+   {
+    "done": false,
+    "id": "17.1",
+    "text": "Pricing teardown: 6 real products, one per pricing model",
+    "effort": "M"
+   },
+   {
+    "done": false,
+    "id": "17.2",
+    "text": "AI Career Coach Free / Pro / Premium tiers with upgrade triggers",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "16.1",
+    "text": "Events dataset: pivot, funnel, half-page diagnosis. Get the dataset from the LMS first",
+    "effort": "M"
+   },
+   {
+    "done": false,
+    "id": "15.1",
+    "text": "Spotify TAM / SAM / SOM with every assumption written down",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "15.2",
+    "text": "Groww positioning statement",
+    "effort": "S"
+   }
+  ]
+ },
+ {
+  "title": "Then: Module 2 tool skills (good for your CV)",
+  "items": [
+   {
+    "done": false,
+    "id": "14.1",
+    "text": "Recreate the Tiffin Track Scrum project in Jira: epics, pointed stories, one sprint, board, with screenshots",
+    "effort": "M"
+   },
+   {
+    "done": false,
+    "id": "13.1",
+    "text": "Work breakdown for one capability: epic → needs → scenarios → tasks → acceptance",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "12.1",
+    "text": "Journeys + data-flow diagrams for 3 products (Spotify, Swiggy, your product)",
+    "effort": "M"
+   },
+   {
+    "done": false,
+    "id": "10.1",
+    "text": "Usability test of the UPI Recover prototype: 3–5 users, 3 tasks, severity table, fixes",
+    "effort": "M"
+   },
+   {
+    "done": false,
+    "id": "09.1",
+    "text": "Figma clickable prototype, 4–5 screens (rebuild the UPI Recover screens)",
+    "effort": "M"
+   }
+  ]
+ },
+ {
+  "title": "Last: Module 1 leftovers",
+  "items": [
+   {
+    "done": false,
+    "id": "08.1",
+    "text": "Design-thinking pass on one real process, for example car-loan document collection",
+    "effort": "M"
+   },
+   {
+    "done": false,
+    "id": "07.1",
+    "text": "Join a beta programme, log first impressions, write a learnings note after 2–4 weeks",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "05.1",
+    "text": "15 pain observations across three meals, over 3 days",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "04.1",
+    "text": "ChatGPT user journey",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "04.2",
+    "text": "Interview structure applied to the Google Maps case",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "03.1",
+    "text": "3 survey questions with answer options for Google Maps emergency routing",
+    "effort": "S"
+   },
+   {
+    "done": false,
+    "id": "01.1",
+    "text": "Comparison table of AI companies and models: text, image, video, audio, code",
+    "effort": "S"
+   }
+  ]
+ },
+ {
+  "title": "Workshop",
+  "items": [
+   {
+    "done": false,
+    "id": "W17.1",
+    "text": "Exercise 7, ZestCart capstone, parts 7A–7E: golden set, latency, cost, model choice",
+    "effort": "M"
+   }
+  ]
+ },
+ {
+  "title": "Portfolio moves (after your review)",
+  "items": [
+   {
+    "done": false,
+    "id": "",
+    "text": "Push the class-number renames in Portfolio and Portfolio-pvt",
+    "effort": ""
+   },
+   {
+    "done": false,
+    "id": "",
+    "text": "Add Class 05 persona + journey and the Class 06 Rapido teardown to the public portfolio",
+    "effort": ""
+   },
+   {
+    "done": false,
+    "id": "",
+    "text": "Add the HDFC Xpress Assist PRD and the UPI Recover PRD + sprint plan",
+    "effort": ""
+   }
+  ]
+ }
+]

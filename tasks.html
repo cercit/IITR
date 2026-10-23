@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var t=localStorage.getItem('sameer-portfolio-theme');document.documentElement.dataset.theme=(t==='light'||t==='dark')?t:(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}catch(e){document.documentElement.dataset.theme='dark'}</script>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/style.css?v=2">
+<title>Tasks · Masai Classes</title>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+</head>
+<body>
+<main>
+
+<section class="page-intro wrap"><span class="eyebrow">To do</span><h1>Assignments and deliverables.</h1>
+  <p class="lede">What each class asked me to make, in the order I'm doing it. Ticked items are finished; the tracker below shows the evidence.</p></section>
+<div class="wrap">
+<div class="stats" id="tstats"></div>
+<div id="phases"></div>
+<section class="section"><div class="section-heading"><div><span class="eyebrow">Evidence</span><h2>Assignment tracker</h2></div></div>
+<div class="controls"><div class="filter-buttons" id="f"><button data-f="all" aria-pressed="true">All</button><button data-f="Not started" aria-pressed="false">To do</button><button data-f="Partly" aria-pressed="false">Partly</button><button data-f="Done" aria-pressed="false">Done</button></div><span class="count" id="count"></span></div>
+<div class="table-wrap md-block" id="tracker" style="max-width:none"></div></section>
+</div>
+
+</main>
+<script src="assets/app.js?v=2"></script>
+<script>
+
+getJSON('data/deliverables.json').then(ph => {
+  const items = ph.flatMap(p => p.items.filter(i => i.text));
+  const done = items.filter(i => i.done).length;
+  document.getElementById('tstats').innerHTML = `<div class="stat"><b>${done}/${items.length}</b><span>deliverables done</span><div class="bar"><i style="width:${Math.round(done / items.length * 100)}%"></i></div></div>` +
+    ph.slice(0, 3).map(p => { const it = p.items.filter(i => i.text); const d = it.filter(i => i.done).length; return `<div class="stat"><b>${d}/${it.length}</b><span>${esc(p.title.split(':')[0])}</span><div class="bar"><i style="width:${it.length ? Math.round(d / it.length * 100) : 0}%"></i></div></div>`; }).join('');
+  document.getElementById('phases').innerHTML = ph.map(p => {
+    const it = p.items.filter(i => i.text), d = it.filter(i => i.done).length;
+    const rows = p.items.map(i => i.group ? `</ul><p class="group">${esc(i.group)}</p><ul class="todo">` :
+      `<li class="${i.done ? 'done' : ''}"><span class="box" aria-hidden="true"></span><span class="id">${esc(i.id)}</span><span class="tx">${esc(i.text)}</span><span class="ef">${esc(i.effort)}</span></li>`).join('');
+    return `<section class="phase"><h2>${esc(p.title)}</h2><p class="meta">${d} of ${it.length} done</p><ul class="todo">${rows}</ul></section>`;
+  }).join('');
+});
+fetch('data/assignments.md').then(r => r.text()).then(t => {
+  const tbl = t.split('\n').filter(l => l.startsWith('|')).join('\n');
+  const el = document.getElementById('tracker'); el.innerHTML = marked.parse(tbl);
+  el.querySelector('table')?.classList.add('plain');
+  const rows = [...el.querySelectorAll('tbody tr')];
+  rows.forEach(tr => { const s = tr.children[2], k = s.textContent.trim(); tr.dataset.s = k; s.innerHTML = `<span class="chip ${k === 'Done' ? 'good' : k === 'Partly' ? 'part' : 'todo'}">${k}</span>`; });
+  const draw = f => { let n = 0; rows.forEach(tr => { const on = f === 'all' || tr.dataset.s === f; tr.hidden = !on; n += on; }); document.getElementById('count').textContent = `${n} assignments`; };
+  filters(document.getElementById('f'), draw); draw('all');
+});
+
+</script>
+</body>
+</html>

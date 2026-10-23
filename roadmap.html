@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var t=localStorage.getItem('sameer-portfolio-theme');document.documentElement.dataset.theme=(t==='light'||t==='dark')?t:(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}catch(e){document.documentElement.dataset.theme='dark'}</script>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/style.css?v=2">
+<title>Roadmap · Masai Classes</title>
+
+</head>
+<body>
+<main>
+
+<section class="page-intro wrap"><span class="eyebrow">Roadmap</span><h1>Every class, in order.</h1>
+  <p class="lede">Grouped by the module each exam covers. Class numbers are the portal's Academic Session numbers. Open any class for a 4–5 page note with diagrams and a PDF.</p></section>
+<div class="wrap"><div class="controls"><div class="filter-buttons" id="f">
+  <button data-f="all" aria-pressed="true">All</button><button data-f="1" aria-pressed="false">Module 1</button><button data-f="2" aria-pressed="false">Module 2</button>
+  <button data-f="3" aria-pressed="false">Module 3</button><button data-f="4" aria-pressed="false">Module 4</button><button data-f="w" aria-pressed="false">Workshops</button></div>
+  <span class="count" id="count"></span></div>
+<div id="roadmap"></div></div>
+
+</main>
+<script src="assets/app.js?v=2"></script>
+<script>
+
+loadData().then(({ modules, classes }) => {
+  const box = document.getElementById('roadmap');
+  const draw = f => {
+    let shown = 0;
+    box.innerHTML = modules.filter(m => f === 'all' || f === 'w' || String(m.id) === f).map(m => {
+      const list = classes.filter(c => c.module === m.id && (f !== 'w' || c.workshop));
+      shown += list.length;
+      if (!list.length) return '';
+      const rows = list.map(c => `<li><a class="row" href="${classHref(c)}"><time>${fmtDate(c.date)}</time><div><div class="k">${classLabel(c)}</div><div class="t">${esc(c.topic)}</div><div class="d">${esc(c.detail)}</div></div><div class="chips">${chips(c)}</div></a></li>`).join('');
+      const exam = f === 'w' ? '' : `<li class="exam"><div class="row"><time>${fmtDate(m.exam)}</time><div><div class="k">Exam</div><div class="t">${m.name} evaluation</div><div class="d">90 minutes · objective + subjective · 10% weightage</div></div><div class="chips"><span class="chip ${m.exam < today() ? 'good' : 'part'}">${m.exam < today() ? 'Taken' : 'Upcoming'}</span></div></div></li>`;
+      return `<section class="module"><div class="module-head"><h2>${m.name}</h2><span class="meta">${m.label}</span></div><ol class="rail">${rows}${exam}</ol></section>`;
+    }).join('');
+    document.getElementById('count').textContent = `${shown} ${shown === 1 ? 'class' : 'classes'}`;
+  };
+  filters(document.getElementById('f'), draw);
+  draw('all');
+});
+
+</script>
+</body>
+</html>

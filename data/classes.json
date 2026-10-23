@@ -55,6 +55,7 @@
    "workshop": false,
    "notes": true,
    "words": 2003,
+   "pdf": true,
    "assignment": "done",
    "assignmentCounts": {
     "Done": 1
@@ -73,6 +74,7 @@
    "workshop": false,
    "notes": true,
    "words": 2075,
+   "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
     "Partly": 1
@@ -91,6 +93,7 @@
    "workshop": false,
    "notes": true,
    "words": 2186,
+   "pdf": true,
    "assignment": "done",
    "assignmentCounts": {
     "Done": 1
@@ -109,6 +112,7 @@
    "workshop": false,
    "notes": true,
    "words": 2154,
+   "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
     "Partly": 1
@@ -127,10 +131,11 @@
    "workshop": false,
    "notes": true,
    "words": 2074,
+   "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Done": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Done": 1
    }
   },
   {
@@ -146,10 +151,11 @@
    "workshop": false,
    "notes": true,
    "words": 2069,
+   "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Done": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Done": 1
    }
   },
   {
@@ -165,6 +171,7 @@
    "workshop": false,
    "notes": true,
    "words": 2169,
+   "pdf": true,
    "assignment": "done",
    "assignmentCounts": {
     "Done": 1
@@ -183,6 +190,7 @@
    "workshop": false,
    "notes": true,
    "words": 2064,
+   "pdf": true,
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
@@ -201,6 +209,7 @@
    "workshop": false,
    "notes": true,
    "words": 2031,
+   "pdf": true,
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
@@ -219,6 +228,7 @@
    "workshop": false,
    "notes": true,
    "words": 2000,
+   "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
     "Partly": 1
@@ -237,6 +247,7 @@
    "workshop": false,
    "notes": true,
    "words": 2177,
+   "pdf": true,
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
@@ -255,6 +266,7 @@
    "workshop": false,
    "notes": true,
    "words": 2175,
+   "pdf": true,
    "assignment": "done",
    "assignmentCounts": {
     "Done": 1
@@ -273,10 +285,11 @@
    "workshop": false,
    "notes": true,
    "words": 2059,
+   "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Done": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Done": 1
    }
   },
   {
@@ -292,6 +305,7 @@
    "workshop": false,
    "notes": true,
    "words": 2171,
+   "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
     "Partly": 1
@@ -310,6 +324,7 @@
    "workshop": false,
    "notes": true,
    "words": 2172,
+   "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
     "Partly": 1
@@ -328,6 +343,7 @@
    "workshop": false,
    "notes": true,
    "words": 2030,
+   "pdf": true,
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
@@ -346,6 +362,7 @@
    "workshop": false,
    "notes": true,
    "words": 2005,
+   "pdf": true,
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
@@ -364,6 +381,7 @@
    "workshop": false,
    "notes": true,
    "words": 1975,
+   "pdf": true,
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
@@ -382,6 +400,7 @@
    "workshop": false,
    "notes": true,
    "words": 2067,
+   "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
     "Partly": 1
@@ -400,6 +419,7 @@
    "workshop": false,
    "notes": true,
    "words": 2084,
+   "pdf": true,
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
@@ -418,10 +438,11 @@
    "workshop": false,
    "notes": true,
    "words": 1834,
+   "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Done": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Done": 1
    }
   },
   {
@@ -437,6 +458,7 @@
    "workshop": false,
    "notes": true,
    "words": 1973,
+   "pdf": true,
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
@@ -455,6 +477,7 @@
    "workshop": false,
    "notes": true,
    "words": 1833,
+   "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
     "Partly": 1
@@ -473,6 +496,7 @@
    "workshop": true,
    "notes": true,
    "words": 1841,
+   "pdf": true,
    "assignment": "done",
    "assignmentCounts": {
     "Done": 1
@@ -491,10 +515,11 @@
    "workshop": false,
    "notes": true,
    "words": 2064,
+   "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Partly": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Partly": 1
    }
   },
   {
@@ -510,10 +535,11 @@
    "workshop": false,
    "notes": true,
    "words": 2015,
+   "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Partly": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Partly": 1
    }
   },
   {
@@ -529,6 +555,7 @@
    "workshop": true,
    "notes": true,
    "words": 1955,
+   "pdf": true,
    "assignment": "done",
    "assignmentCounts": {
     "Done": 1
@@ -547,10 +574,11 @@
    "workshop": false,
    "notes": true,
    "words": 2176,
+   "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Done": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Done": 1
    }
   },
   {
@@ -566,6 +594,7 @@
    "workshop": false,
    "notes": true,
    "words": 1933,
+   "pdf": true,
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
@@ -584,6 +613,7 @@
    "workshop": false,
    "notes": true,
    "words": 1914,
+   "pdf": true,
    "assignment": "done",
    "assignmentCounts": {
     "Done": 2
@@ -602,6 +632,7 @@
    "workshop": false,
    "notes": true,
    "words": 1878,
+   "pdf": true,
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 4
@@ -620,6 +651,7 @@
    "workshop": true,
    "notes": true,
    "words": 2006,
+   "pdf": true,
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1

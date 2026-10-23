@@ -3,44 +3,70 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var t=localStorage.getItem('sameer-portfolio-theme');document.documentElement.dataset.theme=(t==='light'||t==='dark')?t:(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}catch(e){document.documentElement.dataset.theme='dark'}</script>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/style.css?v=2">
 <title>Masai Classes</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=1">
+
 </head>
 <body>
 <main>
-  <div class="eyebrow">Future-Ready PM with Applied AI · IIT Roorkee × Masai · Jul 2026 – Jan 2027</div>
-  <h1>Course roadmap</h1>
-  <p class="lede">Every class in date order, grouped by exam module. Open a class for a short readable note with diagrams. Class numbers are the portal's Academic Session numbers.</p>
-  <div class="stats" id="stats"></div>
-  <div id="roadmap">Loading…</div>
-  <footer>Built from my class notes. Assignments are tracked here, not done here.</footer>
-</main>
-<script src="assets/app.js?v=1"></script>
-<script>
-loadData().then(({ modules, classes }) => {
-  const notes = classes.filter(c => c.notes).length;
-  const counts = { Done: 0, Partly: 0, "Not started": 0 };
-  classes.forEach(c => Object.entries(c.assignmentCounts).forEach(([k, v]) => counts[k] += v));
-  const nextExam = modules.find(m => m.exam >= new Date().toISOString().slice(0, 10));
-  document.getElementById("stats").innerHTML = [
-    [classes.length, "classes and workshops"],
-    [`${notes}/${classes.length}`, "readable notes ready"],
-    [`${counts.Done}/${counts.Done + counts.Partly + counts["Not started"]}`, "assignments done"],
-    [nextExam ? fmtDate(nextExam.exam) : "All done", nextExam ? `next exam (${nextExam.name})` : "exams"]
-  ].map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
 
-  document.getElementById("roadmap").innerHTML = modules.map(m => {
-    const items = classes.filter(c => c.module === m.id).map(c => {
-      const label = c.workshop ? "Workshop" : `Class ${String(c.num).padStart(2, "0")}`;
-      const inner = `<span class="num">${label}</span><span class="title">${esc(c.topic)}</span>
-        <span class="chips">${chips(c)}</span><span class="sub">${fmtDate(c.date)} · ${esc(c.detail)}</span>`;
-      return `<li>${c.notes ? `<a class="item" href="class.html#${encodeURIComponent(c.slug).replace(/%20/g, "_")}">${inner}</a>` : `<div class="item">${inner}</div>`}</li>`;
-    }).join("");
-    return `<section class="module"><div class="module-head"><h2>${m.name}</h2><span class="meta">${m.label} · exam ${fmtDate(m.exam)}</span></div>
-      <ol class="rail">${items}<li class="exam"><div class="item"><span class="num">Exam</span><span class="title">${m.name} evaluation</span><span class="sub">${fmtDate(m.exam)} · 90 minutes · 10% weightage</span></div></li></ol></section>`;
-  }).join("");
-}).catch(e => { document.getElementById("roadmap").textContent = "Could not load the roadmap data. " + e.message; });
+<section class="hero wrap">
+  <div>
+    <span class="eyebrow"><span class="live-dot"></span>IIT Roorkee × Masai · Future-Ready PM with Applied AI</span>
+    <h1>Learning product management, <em class="serif">in public</em>.</h1>
+    <p class="hero-subtitle">Every class, what I took from it, and what I built with it.</p>
+    <p class="hero-intro">I work in vehicle finance and I'm moving into product. This is my course roadmap: 28 academic sessions and the workshops, a short readable note for each, the assignments I've finished and the projects they turned into.</p>
+    <div class="hero-actions"><a class="button" href="roadmap.html">See the roadmap <span aria-hidden="true">→</span></a><a class="button secondary" href="projects.html">What I built</a></div>
+  </div>
+  <aside class="hero-journey" aria-label="Course modules">
+    <p class="journey-title">Course journey</p>
+    <ol class="journey-list" id="journey"></ol>
+  </aside>
+</section>
+<section class="wrap"><div class="stats" id="stats"></div></section>
+<section class="section wrap">
+  <div class="section-heading"><div><span class="eyebrow">Hands-on</span><h2>What I built while learning</h2></div><a class="text-link" href="projects.html">All projects →</a></div>
+  <div class="card-grid" id="featured"></div>
+</section>
+<section class="section wrap">
+  <div class="section-heading"><div><span class="eyebrow">Latest</span><h2>Most recent classes</h2></div><a class="text-link" href="roadmap.html">Full roadmap →</a></div>
+  <ol class="rail" id="latest"></ol>
+</section>
+
+</main>
+<script src="assets/app.js?v=2"></script>
+<script>
+
+loadData().then(({ modules, classes }) => {
+  const t = today();
+  document.getElementById('journey').innerHTML = modules.map(m => {
+    const done = m.exam < t;
+    return `<li class="${done ? '' : 'upcoming'}"><time>${shortDate(m.exam)}</time><div><strong>${m.name}${done ? '' : ' · next'}</strong><span>${m.label}</span></div></li>`;
+  }).join('');
+  const notes = classes.filter(c => c.notes).length;
+  const cnt = { Done: 0, Partly: 0, 'Not started': 0 };
+  classes.forEach(c => Object.entries(c.assignmentCounts).forEach(([k, v]) => cnt[k] += v));
+  const total = cnt.Done + cnt.Partly + cnt['Not started'];
+  const next = modules.find(m => m.exam >= t);
+  document.getElementById('stats').innerHTML = [
+    [classes.length, 'classes and workshops', 1],
+    [notes, 'readable notes with PDFs', notes / classes.length],
+    [`${cnt.Done}/${total}`, 'assignments done', cnt.Done / total],
+    [next ? shortDate(next.exam) : 'Done', next ? `next exam · ${next.name}` : 'all exams taken', 0]
+  ].map(([b, s, p]) => `<div class="stat"><b>${b}</b><span>${s}</span>${p ? `<div class="bar"><i style="width:${Math.round(p * 100)}%"></i></div>` : ''}</div>`).join('');
+  document.getElementById('latest').innerHTML = classes.filter(c => c.notes).slice(-4).reverse().map(c =>
+    `<li><a class="row" href="${classHref(c)}"><time>${fmtDate(c.date)}</time><div><div class="k">${classLabel(c)}</div><div class="t">${esc(c.topic)}</div><div class="d">${esc(c.detail)}</div></div><div class="chips">${chips(c)}</div></a></li>`).join('');
+});
+getJSON('data/projects.json').then(ps => {
+  document.getElementById('featured').innerHTML = ps.filter(p => p.featured).map(cardHTML).join('');
+});
+function cardHTML(p) {
+  return `<article class="card"><div class="visual"><div><b>${esc(p.short)}</b>${esc(p.visual)}</div></div><div class="kicker"><span>${esc(p.from)}</span><span>${esc(p.status)}</span></div><h3>${esc(p.title)}</h3><p>${esc(p.story)}</p>${p.url ? `<a class="text-link" href="${p.url}">${esc(p.linkText)} ↗</a>` : '<span class="count">Local only, not published yet</span>'}</article>`;
+}
+
 </script>
 </body>
 </html>

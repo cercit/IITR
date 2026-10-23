@@ -66,6 +66,9 @@ for r in rows:
         dst = os.path.join(notes_dir, slug)
         os.makedirs(dst, exist_ok=True)
         shutil.copy2(readable, os.path.join(dst, "note.md"))
+        pdf = readable[:-3] + ".pdf"
+        if os.path.exists(pdf):
+            shutil.copy2(pdf, os.path.join(dst, "note.pdf"))
         for img in re.findall(r"\]\((images/[^)\s]+)\)", t):
             ip = os.path.join(src, urllib.parse.unquote(img))
             if os.path.exists(ip):
@@ -84,7 +87,7 @@ for r in rows:
         "key": key, "num": num, "folder": folder, "slug": slug, "date": r["date"],
         "topic": folder.split(" - ", 1)[1], "detail": r["topic"], "portal": r["portal"],
         "module": module_for(num, r["date"]), "workshop": is_ws,
-        "notes": has, "words": wc, "assignment": a, "assignmentCounts": {s: st.count(s) for s in set(st)},
+        "notes": has, "words": wc, "pdf": has and os.path.exists(readable[:-3] + ".pdf"), "assignment": a, "assignmentCounts": {s: st.count(s) for s in set(st)},
     })
 
 out.sort(key=lambda x: (x["date"], x["num"] if x["num"] is not None else 99))
@@ -92,6 +95,25 @@ os.makedirs(os.path.join(SITE, "data"), exist_ok=True)
 with open(os.path.join(SITE, "data", "classes.json"), "w", encoding="utf-8") as f:
     json.dump({"modules": MODULES, "classes": out}, f, indent=1, ensure_ascii=False)
 shutil.copy2(os.path.join(CLASSES, "ASSIGNMENTS.md"), os.path.join(SITE, "data", "assignments.md"))
+# deliverables to-do list: "## phase" headings, "- [ ] **id** text (effort)" items
+phases, cur = [], None
+dl = os.path.join(CLASSES, "DELIVERABLES.md")
+if os.path.exists(dl):
+    for line in read(dl).splitlines():
+        h = re.match(r"^##\s+(.+)$", line)
+        if h:
+            cur = {"title": h.group(1).strip(), "items": []}
+            phases.append(cur)
+            continue
+        m = re.match(r"^- \[( |x|X)\]\s+(?:\*\*([^*]+)\*\*\s+)?(.+?)\s*(?:\((S|M|L)\))?\s*$", line)
+        if m and cur is not None:
+            cur["items"].append({"done": m.group(1).lower() == "x", "id": m.group(2) or "",
+                                 "text": m.group(3).replace("*", ""), "effort": m.group(4) or ""})
+        elif cur is not None and line.startswith("### "):
+            cur["items"].append({"group": line[4:].strip()})
+with open(os.path.join(SITE, "data", "deliverables.json"), "w", encoding="utf-8") as f:
+    json.dump([p for p in phases if any("text" in i for i in p["items"])], f, indent=1, ensure_ascii=False)
+
 if os.path.exists(VAULT_LEARN):
     shutil.copy2(VAULT_LEARN, os.path.join(SITE, "data", "ai-tools-track.md"))
 print(f"{len(out)} classes, {sum(c['notes'] for c in out)} with notes")
