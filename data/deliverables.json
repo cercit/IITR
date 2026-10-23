@@ -6,7 +6,7 @@
     "group": "Class 28 · AI-Driven UX"
    },
    {
-    "done": false,
+    "done": true,
     "id": "28.1",
     "text": "NotebookLM audio + video resume from your resume and site text, plus a 3-line note on the mind map",
     "effort": "S"
