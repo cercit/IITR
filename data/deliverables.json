@@ -242,12 +242,6 @@
     "id": "10.1",
     "text": "Usability test of the UPI Recover prototype: 3–5 users, 3 tasks, severity table, fixes",
     "effort": "M"
-   },
-   {
-    "done": false,
-    "id": "09.1",
-    "text": "Figma clickable prototype, 4–5 screens (rebuild the UPI Recover screens)",
-    "effort": "M"
    }
   ]
  },

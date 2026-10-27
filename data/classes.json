@@ -255,10 +255,8 @@
    "notes": true,
    "words": 2000,
    "pdf": true,
-   "assignment": "partly",
-   "assignmentCounts": {
-    "Partly": 1
-   },
+   "assignment": "none",
+   "assignmentCounts": {},
    "made": []
   },
   {

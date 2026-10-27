@@ -18,7 +18,7 @@ Class numbers are the portal Academic Session numbers (see `class-map.md`). Evid
 | 06 | Competitor/feature analysis, one opportunity, SWOT, TAM/SAM/SOM | Done | `Masai/Session 6 - Competitor Research and Analysis/competitor-teardown.md` (Rapido; not yet in public portfolio) |
 | 07 | Find and join a beta programme, record learnings | Not started | – |
 | 08 | Pick another process, map users and journey, ideate per stage, simplify | Not started | – |
-| 09 | Own Figma copy: wireframe and clickable prototype | Partly | Stitch mockups in `Sunday_PRD_Workshop/mockups/` (not Figma) |
+| 09 | Own Figma copy: wireframe and clickable prototype | Not needed | Dropped 27 Oct 2026 (Arun: not required). Clickable screens exist in Stitch (`Sunday_PRD_Workshop/mockups/`) and the live prototypes |
 | 10 | Fix prototype end to end, test with users, record struggles | Not started | – |
 | 11 | Problem statement, goals/non-goals, persona for a product of your choice | Done | `Sunday_PRD_Workshop/docs/PRD.md` (UPI Recover, PhonePe) |
 | 12 | Two complete PRDs: one written yourself, one from the shared prompt | Done | Own: `Sunday_PRD_Workshop/docs/PRD.md` · Prompted: `Masai/PRD - HDFC Xpress Assist/PRD.md` |
