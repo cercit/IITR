@@ -74,6 +74,15 @@ for r in rows:
             if os.path.exists(ip):
                 os.makedirs(os.path.join(dst, "images"), exist_ok=True)
                 shutil.copy2(ip, os.path.join(dst, urllib.parse.unquote(img)))
+    # class work ("What I made"): Classes/<folder>/deliverable/ is copied as-is and listed
+    made = []
+    dsrc = os.path.join(src, "deliverable")
+    if has and os.path.isdir(dsrc):
+        shutil.copytree(dsrc, os.path.join(notes_dir, slug, "deliverable"), dirs_exist_ok=True)
+        for root, _, files in os.walk(dsrc):
+            for fn in sorted(files):
+                made.append(os.path.relpath(os.path.join(root, fn), dsrc).replace(os.sep, "/"))
+        made.sort(key=lambda p: (p.count("/"), p.lower() != "readme.md", p.lower()))
     st = assign.get(key, [])
     if not st:
         a = "none"
@@ -88,6 +97,7 @@ for r in rows:
         "topic": folder.split(" - ", 1)[1], "detail": r["topic"], "portal": r["portal"],
         "module": module_for(num, r["date"]), "workshop": is_ws,
         "notes": has, "words": wc, "pdf": has and os.path.exists(readable[:-3] + ".pdf"), "assignment": a, "assignmentCounts": {s: st.count(s) for s in set(st)},
+        "made": made,
     })
 
 out.sort(key=lambda x: (x["date"], x["num"] if x["num"] is not None else 99))

@@ -114,10 +114,43 @@ loadData().then(({ modules, classes }) => {
 page("class.html", "Class note · Masai Classes", """
 <div class="wrap">
   <header class="case-hero" id="hero"><a class="back-link" href="roadmap.html">← Roadmap</a></header>
+  <section class="made" id="made" hidden aria-labelledby="made-h"></section>
   <article class="note" id="note">Loading…</article>
   <nav class="pager" id="pager" aria-label="Other classes"></nav>
 </div>
 """, """
+// "What I made": the class work in notes/<class>/deliverable/
+const REPO = 'https://github.com/cercit/IITR/blob/main/';
+const enc = p => p.split('/').map(encodeURIComponent).join('/');
+const nice = f => f.replace(/\\.[^.]+$/, '').replace(/[-_]+/g, ' ').replace(/^./, s => s.toUpperCase());
+async function showMade(c, base) {
+  const el = document.getElementById('made'), files = c.made || [];
+  if (!files.length) { el.hidden = true; el.innerHTML = ''; return; }
+  const dir = base + '/deliverable/', gh = REPO + 'notes/' + enc(c.slug) + '/deliverable/';
+  const pics = files.filter(f => /\\.(png|jpe?g|webp|gif)$/i.test(f));
+  const rest = files.filter(f => !pics.includes(f) && f.toLowerCase() !== 'readme.md');
+  const link = f => {
+    const folder = f.includes('/') ? nice(f.split('/')[0]) + ': ' : '';
+    if (/\\.html?$/i.test(f)) return `<li><a href="${dir + enc(f)}" target="_blank" rel="noopener">${esc(folder)}open and play ↗</a></li>`;
+    return `<li><a href="${gh + enc(f)}" target="_blank" rel="noopener">${esc(folder + nice(f.split('/').pop()))} ↗</a></li>`;
+  };
+  let story = '';
+  if (files.some(f => f.toLowerCase() === 'readme.md')) {
+    const r = await fetch(dir + 'README.md', { cache: 'no-cache' });
+    if (r.ok) {
+      // relative links in the write-up: documents open on GitHub, everything else (games, images) from the site
+      const html = renderMarkdown(await r.text(), base + '/deliverable').replace(/(<a[^>]+href=")(?!https?:|#|mailto:|\\/)([^"]+)"/g,
+        (m, pre, h) => pre + (/\\.(md|txt)$/i.test(h) ? gh : dir) + enc(decodeURIComponent(h)) + '"');
+      story = `<details class="made-story"><summary>Read the write-up</summary><div class="note-body">${html}</div></details>`;
+    }
+  }
+  el.innerHTML = `<h2 id="made-h">What I made</h2>
+    ${pics.length ? `<div class="made-pics">${pics.map(f => `<a href="${dir + enc(f)}" target="_blank" rel="noopener"><img src="${dir + enc(f)}" alt="${esc(nice(f.split('/').pop()))}" loading="lazy"><span>${esc(nice(f.split('/').pop()))}</span></a>`).join('')}</div>` : ''}
+    ${rest.length ? `<ul class="made-files">${rest.map(link).join('')}</ul>` : ''}
+    ${story}`;
+  el.hidden = false;
+}
+
 function show() {
   loadData().then(async ({ modules, classes }) => {
     const list = classes.filter(c => c.notes);
@@ -131,6 +164,7 @@ function show() {
       <div class="case-meta"><span>${classLabel(c)}</span><span>${fmtDate(c.date)}</span><span>${m ? m.name : ''}</span></div>
       <h1>${esc(c.topic)}</h1><p class="section-intro">${esc(c.detail)}</p>
       <div class="case-actions">${c.pdf ? `<a class="button" href="${base}/note.pdf">Download PDF ↓</a>` : ''}<span class="chips">${chips(c)}</span></div>`;
+    await showMade(c, base);
     const r = await fetch(base + '/note.md', { cache: 'no-cache' });
     document.getElementById('note').innerHTML = r.ok ? renderMarkdown(await r.text(), base) : '<p>Could not load this note.</p>';
     runMermaid();

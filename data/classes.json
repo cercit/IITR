@@ -59,7 +59,8 @@
    "assignment": "done",
    "assignmentCounts": {
     "Done": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "01",
@@ -78,7 +79,11 @@
    "assignment": "partly",
    "assignmentCounts": {
     "Partly": 1
-   }
+   },
+   "made": [
+    "README.md",
+    "PM-Ecosystem.png"
+   ]
   },
   {
    "key": "02",
@@ -97,7 +102,12 @@
    "assignment": "done",
    "assignmentCounts": {
     "Done": 1
-   }
+   },
+   "made": [
+    "README.md",
+    "Day-in-Life-Cars24.png",
+    "Prompt.txt"
+   ]
   },
   {
    "key": "03",
@@ -116,7 +126,13 @@
    "assignment": "partly",
    "assignmentCounts": {
     "Partly": 1
-   }
+   },
+   "made": [
+    "README.md",
+    "Needs-vs-Behaviour.png",
+    "Prompt.txt",
+    "research-plan.md"
+   ]
   },
   {
    "key": "04",
@@ -134,9 +150,15 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Done": 1,
-    "Not started": 1
-   }
+    "Not started": 1,
+    "Done": 1
+   },
+   "made": [
+    "README.md",
+    "bias-teardown.md",
+    "Prompt-and-AI-Response.md",
+    "Xbox-Game-Pass-Interview-Questions.png"
+   ]
   },
   {
    "key": "05",
@@ -154,9 +176,10 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Done": 1,
-    "Not started": 1
-   }
+    "Not started": 1,
+    "Done": 1
+   },
+   "made": []
   },
   {
    "key": "06",
@@ -175,7 +198,8 @@
    "assignment": "done",
    "assignmentCounts": {
     "Done": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "07",
@@ -194,7 +218,8 @@
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "08",
@@ -213,7 +238,8 @@
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "09",
@@ -232,7 +258,8 @@
    "assignment": "partly",
    "assignmentCounts": {
     "Partly": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "10",
@@ -251,7 +278,8 @@
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "11",
@@ -270,7 +298,8 @@
    "assignment": "done",
    "assignmentCounts": {
     "Done": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "12",
@@ -288,9 +317,10 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Done": 1,
-    "Not started": 1
-   }
+    "Not started": 1,
+    "Done": 1
+   },
+   "made": []
   },
   {
    "key": "13",
@@ -309,7 +339,8 @@
    "assignment": "partly",
    "assignmentCounts": {
     "Partly": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "14",
@@ -328,7 +359,8 @@
    "assignment": "partly",
    "assignmentCounts": {
     "Partly": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "15",
@@ -347,7 +379,8 @@
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "16",
@@ -366,7 +399,8 @@
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "17",
@@ -385,7 +419,8 @@
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "18",
@@ -404,7 +439,8 @@
    "assignment": "partly",
    "assignmentCounts": {
     "Partly": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "19",
@@ -423,7 +459,8 @@
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "20",
@@ -441,9 +478,10 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Done": 1,
-    "Not started": 1
-   }
+    "Not started": 1,
+    "Done": 1
+   },
+   "made": []
   },
   {
    "key": "21",
@@ -462,7 +500,8 @@
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "22",
@@ -481,7 +520,8 @@
    "assignment": "partly",
    "assignmentCounts": {
     "Partly": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "W 27 Sep",
@@ -500,7 +540,8 @@
    "assignment": "done",
    "assignmentCounts": {
     "Done": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "23",
@@ -520,7 +561,8 @@
    "assignmentCounts": {
     "Partly": 1,
     "Not started": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "24",
@@ -540,7 +582,8 @@
    "assignmentCounts": {
     "Partly": 1,
     "Not started": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "W 4 Oct",
@@ -559,7 +602,8 @@
    "assignment": "done",
    "assignmentCounts": {
     "Done": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "25",
@@ -577,9 +621,10 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Done": 1,
-    "Not started": 1
-   }
+    "Not started": 1,
+    "Done": 1
+   },
+   "made": []
   },
   {
    "key": "26",
@@ -598,7 +643,8 @@
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
-   }
+   },
+   "made": []
   },
   {
    "key": "27",
@@ -617,7 +663,16 @@
    "assignment": "done",
    "assignmentCounts": {
     "Done": 2
-   }
+   },
+   "made": [
+    "README.md",
+    "context.md",
+    "game-ideas.md",
+    "memory-game/dark-theme-prd.md",
+    "memory-game/memory-game.html",
+    "snakes-and-ladders/PRD.md",
+    "snakes-and-ladders/snakes-and-ladders.html"
+   ]
   },
   {
    "key": "28",
@@ -636,7 +691,8 @@
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 4
-   }
+   },
+   "made": []
   },
   {
    "key": "W 17 Oct",
@@ -655,7 +711,8 @@
    "assignment": "open",
    "assignmentCounts": {
     "Not started": 1
-   }
+   },
+   "made": []
   }
  ]
 }
