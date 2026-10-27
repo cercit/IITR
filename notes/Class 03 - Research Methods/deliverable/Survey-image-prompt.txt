@@ -22,3 +22,5 @@ Then one line in navy: "Rare can still be serious."
 Footer, small (24pt), centred: "A survey counts how often. Interviews show how bad."
 
 Style: calm and respectful, since the topic is a medical emergency. No people's faces, no blood, no ambulance sirens or dramatic imagery. Lots of white space. Text must be spelled exactly as written above.
+
+Use exactly these three questions and no others: "Did a map app guide the trip?", "What slowed you down? (all that apply)", "Right entrance on the first try?". Do not add answer options. Check spelling: "counts", "wrong", "entrance".
