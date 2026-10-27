@@ -1,71 +1,74 @@
-# Google Maps emergency routing: three survey questions
+# Google Maps emergency routing: my three survey questions
 
-Class 03 homework, Research Methods. Three survey questions with answer options about one sensitive situation: getting someone to a hospital in an emergency.
+## The case that started it
 
-## Before the questions
+In class we heard about a family in Sarjapur, Bangalore. The mother had a seizure, and the ambulance was booked through Google Maps. Maps sent it to the hospital's main gate, which was on the far side. The family always used the back gate, five minutes from home. The detour took 30 minutes, and she was left with lasting paralysis on one side. The son took Google Maps to the Karnataka High Court.
 
-**The decision this survey feeds.** Should Google Maps add an emergency mode that routes you to the emergency entrance of the nearest hospital that can help, instead of just "the hospital"?
+The homework: if I were solving Google Maps emergency routing, what survey questions would I ask?
 
-**Who answers.** People in Indian cities who travelled to a hospital urgently in the last 12 months, as the driver or a passenger. One screening question comes first:
+My first instinct was to ask "Would an emergency mode help you?" Everyone says yes to that, and it tells me nothing. So I started from the decision instead.
 
-> In the last 12 months, have you travelled to a hospital urgently, for yourself or someone else?
+## What I want to decide
+
+Should Google Maps add an emergency mode that takes you to the right entrance of a hospital that can actually help, and not just to the hospital's address?
+
+## Who I'm asking
+
+People in Indian cities who went to a hospital in a hurry in the last 12 months, either driving or as a passenger. One question filters them first:
+
+> In the last 12 months, have you had to get to a hospital urgently, for yourself or someone else?
 > Yes · No · Prefer not to say
 
-Only people who answer Yes see the three questions.
+Only those who say Yes see the three questions.
 
-**Rules I followed**
+## My three questions
 
-- Ask about the last real event, not opinions or "would you use this?"
-- Never name the feature or hint at the answer I want.
-- Give every question an answer that could kill the idea.
-- The topic is painful for some people, so the wording stays calm and every question has "Prefer not to say".
+**1. The last time you had to get to a hospital urgently, how did you decide which way to go?**
 
-## The three questions
-
-**Q1. The last time you had to reach a hospital urgently, how did you choose the route?**
-
-- Used Google Maps
-- Used another map app
-- Already knew the way
-- Asked someone (driver, family, passer-by)
-- The ambulance driver chose it
-- Other (please say)
+- Google Maps
+- Another map app
+- I already knew the way
+- Asked someone (driver, family, someone on the road)
+- The ambulance driver decided
+- Other
 - Prefer not to say
 
-*Why:* it checks whether people open a map app in an emergency at all. If most people already knew the way, a new mode matters less.
+I ask this first because if most people already knew the way, Maps was never in the picture and the whole idea is weaker.
 
-**Q2. On that trip, what slowed you down the most? Pick one.**
+**2. What held you up the most on that trip? Pick one.**
 
 - Traffic
-- Finding which hospital to go to
-- Finding the emergency entrance once we reached
-- Reached a hospital that could not help or was closed
+- Working out which hospital to go to
+- Finding the emergency entrance once we got there
+- The hospital couldn't help us, or was closed
 - Parking
-- Nothing slowed us down
-- Other (please say)
+- Nothing held us up
+- Other
 - Prefer not to say
 
-*Why:* it finds the real bottleneck. If traffic wins by a long way, the problem is speed, not finding the entrance. "Nothing slowed us down" is the answer that could end the idea.
+This tells me where the time actually went. If traffic wins easily, the problem is speed, not the gate. "Nothing held us up" is there on purpose. If a lot of people pick it, I should drop the idea.
 
-**Q3. Did you reach the right entrance of the hospital on the first try?**
+**3. Did you reach the right entrance on the first try?**
 
-- Yes, on the first try
-- Yes, after asking someone
-- No, we went to the wrong place first
+- Yes, straight away
+- Yes, but only after asking someone
+- No, we went to the wrong gate or building first
 - I don't remember
 - Prefer not to say
 
-*Why:* it tests the exact problem the feature would solve. If almost everyone found the right entrance first time, the feature is not worth building.
+This is the Sarjapur problem, asked directly. If nearly everyone found the right entrance first time, this feature isn't worth building.
 
-## What would change the decision
+## How the answers would change my decision
 
-| If the answers show | Then |
+| If most people say | I would |
 |---|---|
-| Most people did not use a map app (Q1) | Look at how people find hospitals, not at a Maps feature |
-| Traffic is the main delay (Q2) | Routing speed matters more than entrance finding |
-| Many found the wrong entrance or hospital first (Q2, Q3) | Worth testing an emergency mode, with interviews to follow |
-| Most found the right entrance first time (Q3) | Drop the idea |
+| They didn't use a map app (Q1) | Look at how people find hospitals, not at a Maps feature |
+| Traffic held them up (Q2) | Work on faster routing, not on entrances |
+| They went to the wrong gate or hospital first (Q2, Q3) | Test an emergency mode, then interview a few of them |
+| They found the right entrance first time (Q3) | Drop the idea |
 
-## What I learned
+## What I took from this
 
-Asking "would you use an emergency mode?" gets a polite yes. Asking what happened last time, with a real way to say "this wasn't a problem", tells you whether the problem exists. On a sensitive topic, the calm wording and the "Prefer not to say" option matter as much as the questions.
+Every question asks about one real trip, not what people think they'd do. None of them mentions an emergency mode, so nobody can guess the answer I want. And each one has an answer that would tell me to stop.
+
+Someone answering this may be remembering one of the worst days of their life. That's why the wording stays plain and calm, and why every question lets them skip.
