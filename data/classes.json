@@ -127,6 +127,7 @@
    },
    "made": [
     "README.md",
+    "Emergency-routing-survey.png",
     "Google-Maps-emergency-survey.md",
     "Needs-vs-Behaviour.png",
     "Prompt.txt",
@@ -557,8 +558,8 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Partly": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Partly": 1
    },
    "made": []
   },
@@ -578,8 +579,8 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Partly": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Partly": 1
    },
    "made": []
   },
