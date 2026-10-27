@@ -1,0 +1,98 @@
+Generate a single high-resolution infographic image in A4 portrait size (2480x3508 pixels, 300 DPI).
+
+Title: "NEEDS vs BEHAVIOUR — The Gap Where Products Die"
+
+Use the reference infographic style: clean corporate look, white background, blue (#1A3C6E) as primary color for headers and accents, light blue (#E8F0FE) for card backgrounds, dark charcoal (#2D2D2D) for body text, amber/yellow (#F7C948) as a secondary accent for highlights and icons.
+
+IMPORTANT DESIGN RULES (match the reference style exactly):
+- Large bold serif or sans-serif title at the top, minimum 80pt equivalent
+- Section headers in bold uppercase, minimum 36pt equivalent
+- Body text minimum 24pt equivalent — must be readable when printed on A4 paper
+- Each section inside a rounded card/box with colored background and generous padding
+- Small colored icons (circular background with white icon) next to each section header
+- Clean divider lines between major sections
+- Professional corporate infographic feel — not a slide deck, not a social media post
+
+---
+
+LAYOUT TOP TO BOTTOM:
+
+HEADER SECTION (top 15% of page):
+- Dark blue gradient banner across the top
+- Large white title: "Needs vs Behaviour"
+- Subtitle below in white: "The Gap Where Products Die"
+- Small decorative icons (speech bubble, bar chart, magnifying glass) floating in the header area
+- Below the banner, a highlighted callout box with shield/lightbulb icon: "Research exists to kill your assumptions before engineering money does."
+
+---
+
+DIVIDER LINE with text: "THE TWO THINGS EVERY PM MUST SEPARATE"
+
+---
+
+MIDDLE SECTION (two large cards side by side, 35% of page):
+
+LEFT CARD — light grey background, rounded corners, large padding:
+- Circular speech bubble icon (blue background, white icon) in top-left
+- Header: "1. WHAT USERS SAY" (bold, blue, uppercase)
+- Subheader: "Needs — the story users tell you."
+- Four bullet points with blue checkmark icons, each in large readable text:
+  • "Raise the UPI Lite limit to ₹5,000 — I'd use it"
+  • "This is the best product ever, you're the next Elon Musk"
+  • "Definitely build that feature, I'll use it daily"
+  • "I want better food options for my diet"
+
+RIGHT CARD — light amber/yellow background, rounded corners, large padding:
+- Circular bar chart icon (amber background, white icon) in top-left
+- Header: "2. WHAT USERS DO" (bold, amber/dark, uppercase)
+- Subheader: "Behaviour — what the data actually shows."
+- Four bullet points with amber warning icons, each in large readable text:
+  • "Never opened UPI Lite. Not once."
+  • "Two sessions in the last month."
+  • "Gave feedback on a product they don't use."
+  • "Orders pizza every week despite saying they want healthy food."
+
+---
+
+BOTTOM SECTION (two more cards side by side, 30% of page):
+
+LEFT CARD — light blue background:
+- Circular magnifying glass icon (blue background, white icon)
+- Header: "3. THE SEQUENCING RULE"
+- Subheader: "Most PMs get this backwards."
+- Four numbered steps with arrow flow between them:
+  1. Read your own data first (analytics, reviews, tickets)
+  2. Form a testable hypothesis
+  3. Pick the exact cohort to talk to
+  4. Now do primary research (interviews, surveys)
+- Small note at bottom: "Secondary before primary. Always."
+
+RIGHT CARD — light grey background:
+- Circular checklist icon (blue background, white icon)
+- Header: "4. THE QUESTION GATE"
+- Subheader: "Run every survey question through 6 checks."
+- Six short checks with red X icons:
+  ✗ Does it ask the user to design a feature?
+  ✗ Is it leading?
+  ✗ Does it request sensitive personal data?
+  ✗ Do you already have this data?
+  ✗ Does it label the respondent?
+  ✗ Can no answer prove you wrong?
+- Small note with green checkmark: "Pass all 6 → ship the question."
+
+---
+
+FOOTER STRIP (bottom 8% of page):
+- Dark blue background, full width
+- Large white bold text centered: "When the two disagree, believe the data."
+- Small text below: "If no possible answer would change your mind, you're not doing research — you're doing a rubber stamp."
+
+---
+
+FINAL DESIGN NOTES:
+- Match the corporate infographic style of the reference: clean cards with rounded corners, circular colored icons, generous whitespace, professional hierarchy
+- All text must be large enough to read clearly when printed on A4 paper
+- No watermarks, no AI tool branding, no placeholder text
+- The overall feel should be: a one-page reference poster a PM would pin above their desk
+
+Generate the image now.

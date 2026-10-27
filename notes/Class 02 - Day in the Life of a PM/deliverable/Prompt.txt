@@ -1,0 +1,85 @@
+You are an infographic designer. Generate a single high-resolution image (1920x1080, landscape) titled "DAY IN THE LIFE OF A PRODUCT MANAGER" for [COMPANY NAME].
+
+Use the company's brand colors as the primary palette. Include the company logo placeholder in the top-right corner.
+
+The infographic must contain exactly these 8 sections, laid out in this structure:
+
+TOP ROW — 4 equal boxes side by side:
+
+1. COMPANY CONTEXT
+   - Company name and what it does (2-3 sentences)
+   - Mission statement in one line
+   - How product teams are empowered (1-2 sentences)
+
+2. PRODUCT ROLE
+   - Opening line: "As a PM at [Company], you own problems worth solving for [users]."
+   - 5-6 bullet points on what the PM does: define vision and strategy, prioritize for impact, work cross-functionally, drive experimentation, champion the user experience
+   - Each bullet starts with a strong verb
+
+3. KEY METRICS OWNED
+   - 6-8 specific metrics a PM at this company would track
+   - Use filled circles as bullet markers
+   - Metrics must be specific to the company's business model (not generic)
+   - Examples: for streaming = Hours Viewed, Retention D1/D7/D30, Completion Rate, Engagement Sessions, Churn Rate, Content Discovery Click-through Rate, CSAT/NPS, Conversion Free-to-Paid
+
+4. PRODUCT STAKEHOLDERS
+   - Grid of 8-10 teams the PM works with
+   - Each team name has a small icon next to it
+   - Must include: Engineering, Design, Data Science/Analytics, Marketing, Growth, Finance, Legal, Customer Support, and 1-2 company-specific teams (e.g. Content for Netflix, Logistics for Blinkit)
+
+MIDDLE SECTION — full width table on the left (70%), side panels on the right (30%):
+
+5. DAILY SCHEDULE TABLE
+   - Columns: TIME | ACTIVITY | OUTCOME EXPECTED | TIME SPENT
+   - 10 rows covering a full 9:00 AM to 6:00 PM day
+   - Each activity has a bold title and a one-line description below it
+   - Each row has a small relevant icon
+   - Activities must follow this realistic PM day flow:
+     Row 1: 9:00-9:30 — Check insights, dashboards, user feedback (30 mins)
+     Row 2: 9:30-10:15 — Team standup, sync on progress and blockers (45 mins)
+     Row 3: 10:15-11:00 — Deep work: problem definition, requirements, data analysis (45 mins)
+     Row 4: 11:00-12:00 — Cross-functional sync with content/biz dev/marketing (60 mins)
+     Row 5: 12:00-1:00 — Lunch break (60 mins)
+     Row 6: 1:00-2:00 — Prioritization and roadmap refinement (60 mins)
+     Row 7: 2:00-3:00 — Experimentation review: A/B test results and decisions (60 mins)
+     Row 8: 3:00-4:00 — Stakeholder update and feedback gathering (60 mins)
+     Row 9: 4:00-5:00 — Strategy and planning: PRDs, specs, launch plans (60 mins)
+     Row 10: 5:00-6:00 — Wrap-up: document decisions, plan tomorrow (60 mins)
+   - Outcome Expected column describes what each activity produces
+   - Adapt activity descriptions to be specific to [COMPANY NAME]'s domain
+
+RIGHT SIDE PANELS (stacked vertically next to the schedule):
+
+6. BIGGEST CHALLENGES
+   - 5-6 bullet points on the hardest parts of being a PM at this company
+   - Must be specific to the company's scale, domain, and business model
+   - Include one challenge about balancing short-term wins with long-term vision
+
+7. SKILLS THAT HELP
+   - 5 skills shown as icons with labels below each
+   - Skills: Empathy for Users, Data-Driven Decision Making, Prioritization, Communication, Ownership and Bias for Action
+
+8. WHAT MAKES THIS ROLE EXCITING
+   - 2-3 sentences on why this PM role matters
+   - Reference the company's scale and mission
+   - Small illustration on the right side showing someone enjoying the company's product
+
+BOTTOM STRIP — full width:
+
+9. KEY TAKEAWAY
+   - Left side: key icon + "KEY TAKEAWAY" label
+   - Center: one compelling sentence about what makes a PM at this company special (format: "A [Company] PM blends [skill], [skill] and [skill] to [mission]. We don't just deliver features, we [company-specific impact].")
+   - Right side: company tagline or mission in caps
+
+DESIGN RULES:
+- Clean, professional infographic style — not a slide deck, not a document
+- Company's brand colors as primary (header, accents, icons)
+- White or very light background for the main body
+- Bold sans-serif headers, clean body text
+- Small icons next to each schedule row and stakeholder name
+- Table has alternating row shading for readability
+- All text must be fully readable at 1920x1080
+- No watermarks, no AI tool branding, no placeholder text
+- Every section must be filled with real, researched content specific to [COMPANY NAME]
+
+Generate the image now.
