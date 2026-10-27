@@ -279,7 +279,7 @@
     "effort": "S"
    },
    {
-    "done": false,
+    "done": true,
     "id": "03.1",
     "text": "3 survey questions with answer options for Google Maps emergency routing",
     "effort": "S"

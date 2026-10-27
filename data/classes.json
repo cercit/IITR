@@ -121,12 +121,13 @@
    "notes": true,
    "words": 2154,
    "pdf": true,
-   "assignment": "partly",
+   "assignment": "done",
    "assignmentCounts": {
-    "Partly": 1
+    "Done": 1
    },
    "made": [
     "README.md",
+    "Google-Maps-emergency-survey.md",
     "Needs-vs-Behaviour.png",
     "Prompt.txt",
     "research-plan.md"

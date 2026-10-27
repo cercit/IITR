@@ -10,7 +10,7 @@ Class numbers are the portal Academic Session numbers (see `class-map.md`). Evid
 | 00 | Orientation: join LMS, follow schedule | Done | Attended; no deliverable expected |
 | 01 | Compare AI firms/models across text, image, video, audio, code; revise terms | Not needed | `Masai/Session 1 - Introduction-to-Product-Management/` (PM ecosystem post) |
 | 02 | Day-in-the-life image for a favourite product, post on LinkedIn | Done | `Masai/Portfolio/session-02-day-in-life/Day-in-Life-Cars24.png` |
-| 03 | Three survey questions with options for Google Maps emergency routing | Partly | `Masai/Portfolio/session-03-research-methods/research-plan.md` (research plan, not the 3-question Maps survey) |
+| 03 | Three survey questions with options for Google Maps emergency routing | Done | `Masai/Classes/Class 03 - Research Methods/deliverable/Google-Maps-emergency-survey.md` (27 Oct 2026) |
 | 04 | Run the interview-guide prompt for a product, read questions for bias | Done | `Masai/Portfolio/session-04-user-interviews/bias-teardown.md` |
 | 04 | Write a ChatGPT user journey; apply interview structure to the Maps case | Not started | – |
 | 05 | Persona and journey grid for a favourite product | Done | `Masai/Session 5 - How to setup Persona, User Journey/persona-and-journey.md` (not yet in public portfolio) |
