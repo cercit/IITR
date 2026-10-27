@@ -76,10 +76,8 @@
    "notes": true,
    "words": 2075,
    "pdf": true,
-   "assignment": "partly",
-   "assignmentCounts": {
-    "Partly": 1
-   },
+   "assignment": "none",
+   "assignmentCounts": {},
    "made": [
     "README.md",
     "PM-Ecosystem.png"
@@ -150,8 +148,8 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Not started": 1,
-    "Done": 1
+    "Done": 1,
+    "Not started": 1
    },
    "made": [
     "README.md",
@@ -176,8 +174,8 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Not started": 1,
-    "Done": 1
+    "Done": 1,
+    "Not started": 1
    },
    "made": []
   },
@@ -315,8 +313,8 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Not started": 1,
-    "Done": 1
+    "Done": 1,
+    "Not started": 1
    },
    "made": []
   },
@@ -476,8 +474,8 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Not started": 1,
-    "Done": 1
+    "Done": 1,
+    "Not started": 1
    },
    "made": []
   },
@@ -619,8 +617,8 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Not started": 1,
-    "Done": 1
+    "Done": 1,
+    "Not started": 1
    },
    "made": []
   },

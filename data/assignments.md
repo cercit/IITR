@@ -8,7 +8,7 @@ Class numbers are the portal Academic Session numbers (see `class-map.md`). Evid
 | Class | Assignment | Status | Evidence |
 |---|---|---|---|
 | 00 | Orientation: join LMS, follow schedule | Done | Attended; no deliverable expected |
-| 01 | Compare AI firms/models across text, image, video, audio, code; revise terms | Partly | `Masai/Session 1 - Introduction-to-Product-Management/` (PM ecosystem post) |
+| 01 | Compare AI firms/models across text, image, video, audio, code; revise terms | Not needed | `Masai/Session 1 - Introduction-to-Product-Management/` (PM ecosystem post) |
 | 02 | Day-in-the-life image for a favourite product, post on LinkedIn | Done | `Masai/Portfolio/session-02-day-in-life/Day-in-Life-Cars24.png` |
 | 03 | Three survey questions with options for Google Maps emergency routing | Partly | `Masai/Portfolio/session-03-research-methods/research-plan.md` (research plan, not the 3-question Maps survey) |
 | 04 | Run the interview-guide prompt for a product, read questions for bias | Done | `Masai/Portfolio/session-04-user-interviews/bias-teardown.md` |
