@@ -1,0 +1,24 @@
+Create a clean, flat infographic, 1920x1080 pixels, landscape.
+
+Title at the top, large and bold (60pt): "Right hospital, wrong gate"
+Subtitle under it (32pt): "Three survey questions before building an emergency route"
+
+Layout: three equal columns on a soft off-white background, thin dividing lines, generous spacing. All body text at least 32pt, dark navy, plain sans-serif font. Use only three colours: navy for text, a calm teal for highlights, and a soft red for the one warning element. No logos, no brand names, no company colours, no course or class branding.
+
+Left column, heading "What happened" (40pt):
+A simple top-down map sketch of a hospital block with two gates. A short dotted teal line from a house to the "Back gate" labelled "5 min". A long red line looping around the block to the "Main gate" labelled "30 min". One line of text under the map: "The ambulance was sent to the far gate."
+
+Middle column, heading "What I ask" (40pt), three numbered cards stacked:
+1. "How did you choose the route?"
+2. "What held you up the most?"
+3. "Did you reach the right entrance first time?"
+Small grey note under the cards (28pt): "Every question has 'Prefer not to say'."
+
+Right column, heading "What it decides" (40pt), three rows with simple icons:
+- A map pin icon: "Wrong gate often? Test an emergency mode"
+- A traffic icon: "Traffic was the delay? Fix speed, not gates"
+- A tick icon: "Right gate first time? Drop the idea"
+
+Footer, small (24pt), centred: "Ask about the last real trip, not what people would do."
+
+Style: calm and respectful, since the topic is a medical emergency. No people's faces, no blood, no ambulance sirens or dramatic imagery. Lots of white space. Text must be spelled exactly as written above.

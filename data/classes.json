@@ -130,7 +130,8 @@
     "Google-Maps-emergency-survey.md",
     "Needs-vs-Behaviour.png",
     "Prompt.txt",
-    "research-plan.md"
+    "research-plan.md",
+    "Survey-image-prompt.txt"
    ]
   },
   {
@@ -149,8 +150,8 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Done": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Done": 1
    },
    "made": [
     "README.md",
@@ -175,8 +176,8 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Done": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Done": 1
    },
    "made": []
   },
@@ -314,8 +315,8 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Done": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Done": 1
    },
    "made": []
   },
@@ -475,8 +476,8 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Done": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Done": 1
    },
    "made": []
   },
@@ -556,8 +557,8 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Partly": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Partly": 1
    },
    "made": []
   },
@@ -577,8 +578,8 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Partly": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Partly": 1
    },
    "made": []
   },
@@ -618,8 +619,8 @@
    "pdf": true,
    "assignment": "partly",
    "assignmentCounts": {
-    "Done": 1,
-    "Not started": 1
+    "Not started": 1,
+    "Done": 1
    },
    "made": []
   },
